@@ -1,10 +1,14 @@
 import * as Yup from 'yup';
 
 export type Product = {
-  id: string,
-  title: string,
+  count: number,
   description: string,
+  id: string,
   price: number,
+  title: string,
+  author: string,
+  pagesCount: number,
+  imageUrl: string,
 };
 
 export const ProductSchema = Yup.object().shape({
