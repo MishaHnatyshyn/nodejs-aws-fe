@@ -16,8 +16,8 @@ export default function ProductsTable() {
   const [products, setProducts] = useState<any>([]);
 
   useEffect(() => {
-    axios.get(`${API_PATHS.bff}/product`)
-      .then(res => setProducts(res.data));
+    axios.get(`${API_PATHS.product}/products`)
+      .then(res => setProducts(res.data.data));
   }, []);
 
   const onDelete = (id: string) => {
@@ -28,7 +28,6 @@ export default function ProductsTable() {
         }
       );
   };
-
 
   return (
     <TableContainer component={Paper}>

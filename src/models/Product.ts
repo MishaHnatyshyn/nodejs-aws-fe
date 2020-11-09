@@ -6,13 +6,13 @@ export type Product = {
   id: string,
   price: number,
   title: string,
-  author: string,
   pagesCount: number,
-  imageUrl: string,
+  image_url: string,
 };
 
 export const ProductSchema = Yup.object().shape({
   title: Yup.string().required(),
   description: Yup.string(),
   price: Yup.number().required(),
+  count: Yup.number().required(),
 });
