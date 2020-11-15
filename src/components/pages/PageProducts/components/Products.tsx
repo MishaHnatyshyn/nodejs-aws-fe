@@ -54,15 +54,12 @@ export default function Products() {
           <Card className={classes.card}>
             <CardMedia
               className={classes.cardMedia}
-              image={product.imageUrl}
+              image={product.image_url}
               title="Image title"
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
                 {product.title}
-              </Typography>
-              <Typography gutterBottom variant="h6" component="h2">
-                {product.author}
               </Typography>
               <Typography>
                 {formatAsPrice(product.price)}
