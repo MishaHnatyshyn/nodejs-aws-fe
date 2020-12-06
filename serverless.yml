@@ -12,7 +12,7 @@ plugins:
 
 custom:
   client:
-    bucketName: nodejs-aws-programm-auto
+    bucketName: mhnatyshyn-nodejs-aws-programm-auto
     distributionFolder: build
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
